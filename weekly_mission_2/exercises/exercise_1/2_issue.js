@@ -1,4 +1,4 @@
-const repo = {
+const issue = {
     title: "Playbook",
     repositoryNameAssociated: "LaunchX",
     status: "Open",
@@ -15,7 +15,7 @@ const repo = {
     }
    }
    
-   console.log("Título del repo:" + repo.title)
-   console.log(repo.getTitleAndAuthor())
-   console.log(repo.getGeneralInfo())
+   console.log("Título del repo:" + issue.title)
+   console.log(issue.getTitleAndAuthor())
+   console.log(issue.getGeneralInfo())
    
