@@ -1,4 +1,4 @@
-//GitHub
+//GitHub ------------------------------------------------------------------------
 class Repo{
 
     constructor(name, author, language, numberOfCommits, stars, forks, issues_open, issues_closed){
@@ -65,7 +65,7 @@ class PullRequest{
         }
 }
 
-//Twitter
+//Twitter ------------------------------------------------------------------------
 
 class User {
     constructor(name, username, age, followers){
@@ -104,7 +104,7 @@ class Hashtag {
     }
 }
 
-//Facebook
+//Facebook ------------------------------------------------------------------------
 
 class User {
     constructor(name, birthdate, age, friends){
@@ -140,5 +140,31 @@ class Biograpy {
 
     getUserAndGeneralInfo(){
       return this.user + ". " + this.generalInfo
+    }
+}
+
+//Uber ------------------------------------------------------------------------
+class Profile {
+    constructor(name, vehicle, trips, rating, years){
+        this.name = name,
+        this.vehicle = vehicle,
+        this.trips = trips,
+        this.rating = rating,
+        this.years = years
+    }
+
+    getNameTripsAndRating(){
+      return this.name + " has a " + this.rating + " stars rating and a total of " + this.trips + " trips."
+    }
+}
+
+class Travel {
+    constructor(pickUpPoint, dropOff){
+        this.pickUpPoint = pickUpPoint,
+        this.dropOff = dropOff
+    }
+
+    getpickUpPointAndDropOff(){
+      return "Travel from " + this.pickUpPoint + " to " + this.dropOff
     }
 }
