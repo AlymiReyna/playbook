@@ -1,4 +1,4 @@
-const repo = {
+const pullRequest = {
     title: "Playbook",
     branchName: "main",
     date_created: "10/04/2022",
@@ -14,7 +14,7 @@ const repo = {
       }
    }
    
-   console.log(repo.getStatus())
-   console.log(repo.getTitleAndAuthor())
+   console.log(pullRequest.getStatus())
+   console.log(pullRequest.getTitleAndAuthor())
    
    
