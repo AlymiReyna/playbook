@@ -64,3 +64,81 @@ class PullRequest{
           return this.title + " by " + this.author
         }
 }
+
+//Twitter
+
+class User {
+    constructor(name, username, age, followers){
+        this.name = name,
+        this.username = username,
+        this.age = age,
+        this.followers = followers
+    }
+
+    getNameAndUsername(){
+      return this.name + " is registered as " + this.username
+    }
+}
+
+class TrendingTopic{
+    constructor(title, date, tweets, rank){
+        this.title = title,
+        this.date = date,
+        this.tweets = tweets,
+        this.rank = rank
+    }
+
+    getTitleRankAndTweets(){
+      return this.title + " is the #" + this.rank + " trending topic with " + this.tweets + " tweets." 
+    }
+}
+
+class Hashtag {
+    constructor(title, date){
+        this.title = title,
+        this.date = date
+    }
+    
+    getTitleAndDate(){
+      return this.title + " " + this.date
+    }
+}
+
+//Facebook
+
+class User {
+    constructor(name, birthdate, age, friends){
+        this.name = name,
+        this.birthdate = birthdate,
+        this.age = age,
+        this.friends = friends
+    }
+
+    getNameAndFriends(){
+      return this.name + " has " + this.friends + " friends."
+    }
+}
+
+class Post {
+    constructor(date, reactions, shares){
+        this.date = date,
+        this.reactions = reactions,
+        this.shares = shares
+    }
+
+    getReactionsAndShares(){
+      return "This post has " + this.reactions + " reactions and " + this.shares + " shares."
+    }
+}
+
+class Biograpy {
+    constructor(user, generalInfo, friends){
+        this.user = user,
+        this.generalInfor = generalInfo,
+        this.friends = friends
+    }
+
+    getUserAndGeneralInfo(){
+      return this.user + ". " + this.generalInfo
+    }
+}
